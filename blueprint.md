@@ -25,16 +25,15 @@ This project is a web-based Lotto Number Generator. It allows users to generate 
 *   **Web Component:** The entire application is encapsulated within a `<lotto-generator>` custom element for modularity.
 *   **Dark/White Mode:** A toggle switch to change between light and dark themes.
 *   **Partnership Inquiry Form:** A simple and accessible contact form for partnership inquiries, integrated with Formspree.
+*   **Disqus Comments:** A comment section powered by Disqus to allow for user discussions.
 
 ## Current Plan
 
-### Add Partnership Inquiry Form
+### Add Disqus Comment Section
 
-1.  **Update `main.js`:**
-    *   Add an HTML section for the partnership inquiry form within the `LottoGenerator` component's template.
-    *   The form will be configured to submit to the provided Formspree URL: `https://formspree.io/f/mbdkjnzw`.
-    *   The form will include fields for a name, email address, and a message.
-    *   Add CSS styles for the form within the component's `<style>` block to ensure it is visually consistent with the rest of the application and responsive to the light/dark themes.
+1.  **Update `index.html`:**
+    *   Add the `div` element with the id `disqus_thread` below the `lotto-generator` component. This is where the Disqus comments will be loaded.
+    *   Add the Disqus universal embed code script to the body of the `index.html` file to load the comment section.
 2.  **Push to GitHub:**
     *   Commit the new feature to the local repository.
     *   Push the changes to the `main` branch on GitHub.
