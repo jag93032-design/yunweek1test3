@@ -23,20 +23,18 @@ This project is a web-based Lotto Number Generator. It allows users to generate 
 *   **Number Display:** Displays the generated numbers in a clear and visually appealing way.
 *   **History:** Keeps a record of previously generated number sets.
 *   **Web Component:** The entire application is encapsulated within a `<lotto-generator>` custom element for modularity.
+*   **Dark/White Mode:** A toggle switch to change between light and dark themes.
 
 ## Current Plan
 
-1.  **Update `index.html`:**
-    *   Change the title to "Lotto Number Generator".
-    *   Replace the body content with the `<lotto-generator>` custom element.
-2.  **Update `style.css`:**
-    *   Add global styles for the body, including the background texture.
-    *   The component's internal styles will be defined within the web component.
-3.  **Update `main.js`:**
-    *   Create the `LottoGenerator` class as a subclass of `HTMLElement`.
-    *   Implement the Shadow DOM for encapsulation.
-    *   Define the HTML template for the component.
-    *   Implement the logic for generating and displaying the lotto numbers.
-    *   Implement the history feature.
-    *   Define the custom element `lotto-generator`.
+### Add Dark/White Mode
 
+1.  **Update `style.css`:**
+    *   Define CSS variables for the color palette for both light and dark themes.
+    *   Use a `data-theme` attribute on the `body` to switch between the themes.
+2.  **Update `main.js`:**
+    *   Add a theme toggle button to the `LottoGenerator` component.
+    *   Implement the JavaScript logic to toggle the `data-theme` attribute on the `body` element and save the user's preference in `localStorage`.
+3.  **Push to GitHub:**
+    *   Commit the changes with a descriptive message.
+    *   Push the new feature to the `main` branch on GitHub.
